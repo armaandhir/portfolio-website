@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText, PenTool } from "lucide-react";
 import { useLocation, Link } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
 import { personalInfo } from "@/data/personal_info";
+import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
   const location = useLocation();
@@ -51,7 +51,7 @@ const Header = () => {
           )}
 
           <div className="flex items-center space-x-1 sm:space-x-2">
-            <ThemeToggle />
+            <ModeToggle />
             
             {/* Desktop: Show all social icons + resume button */}
             <div className="hidden sm:flex items-center space-x-2">
