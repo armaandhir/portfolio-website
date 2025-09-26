@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, FileText, PenTool } from "lucide-react";
+import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import { useLocation, Link } from "react-router-dom";
 import { personalInfo } from "@/data/personal_info";
 import { ModeToggle } from "./mode-toggle";
@@ -68,11 +68,6 @@ const Header = () => {
               <Button variant="ghost" size="icon" asChild>
                 <a href={`mailto:${personalInfo.primaryEmail}`}>
                   <Mail className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <a href="https://medium.com/@datadelight" target="_blank" rel="noopener noreferrer">
-                  <PenTool className="h-5 w-5" />
                 </a>
               </Button>
               <Button className="bg-highlight text-highlight-foreground hover:bg-highlight/90 ml-2" asChild>
